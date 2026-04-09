@@ -76,7 +76,7 @@ const Footer = () => {
         <Row className="mt-5">
           <Col className="text-center">
             <p className="small mb-0 opacity-75 text-center">
-              COPYRIGHTED © 2026 METTA RESTAURANT | DESIGNED BY DYNAMOPIXEL
+              COPYRIGHTED © 2026 <span style={{color:"#d4af37"}}>METTA RESTAURANT</span> | DESIGNED BY DYNAMOPIXEL
             </p>
           </Col>
         </Row>

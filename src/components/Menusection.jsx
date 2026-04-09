@@ -34,7 +34,7 @@ const MenuSection = () => {
   const currentItems = menuData[activeTab] || [];
 
   return (
-    <section className="menu-section">
+    <section id='Menu' className="menu-section">
       <Container fluid className="px-0">
         <div className="menu-header text-center">
           <p className="special-selection text-center">Special Selection</p>

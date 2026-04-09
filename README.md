@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -14,3 +15,7 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+=======
+# metta-restaurant
+🚀 DynamoPixel — Digital Agency specializing in WordPress, Shopify &amp; Web Development. We create high-converting websites, stunning designs, and SEO-driven digital solutions to help businesses grow online globally.
+>>>>>>> 4cfe54aaea0a4f9366353b02791a1a19b7565321

@@ -1,47 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav, Container, Image } from 'react-bootstrap';
 import CustomButton from './CustomButton';
 import Logo from "../assets/images/Logo.png";
+import PopupForm from "../common/PopupForm"
 
 const MyNavbar = () => {
+  const [showContact, setShowContact] = useState(false);
+
   return (
-    <Navbar 
-      expand="lg" 
-      className="navbar-custom py-3 px-3 px-lg-5"
-     
-    >
-      <Container fluid>
-        
-        {/* Logo */}
-        <Navbar.Brand href="#" className="d-flex align-items-center">
-          <Image src={Logo} height={55} alt="Metta Restaurant" />
-        </Navbar.Brand>
+    <>
+      <Navbar expand="lg" className="navbar-custom py-3 px-3 px-lg-5">
+        <Container fluid>
+          <Navbar.Brand href="#" className="d-flex align-items-center">
+            <Image src={Logo} height={55} alt="Metta Restaurant" />
+          </Navbar.Brand>
 
-        {/* Mobile Toggle Button */}
-        <Navbar.Toggle 
-          aria-controls="navbarScroll"
-          className="border-0"
-        />
+          <Navbar.Toggle aria-controls="navbarScroll" className="border-0" />
 
-        {/* Navbar Content */}
-        <Navbar.Collapse id="navbarScroll">
-          <Nav className="ms-auto align-items-center gap-lg-5 gap-3 text-center mt-4 mt-lg-0">
+          <Navbar.Collapse id="navbarScroll">
+            <Nav className="ms-auto align-items-center gap-lg-5 gap-3 text-center mt-4 mt-lg-0">
 
-            <Nav.Link href="#about" className="nav-link-custom">ABOUT</Nav.Link>
-            <Nav.Link href="#menu" className="nav-link-custom">MENU</Nav.Link>
-            <Nav.Link href="#portfolio" className="nav-link-custom">PORTFOLIO</Nav.Link>
-            <Nav.Link href="#contact" className="nav-link-custom">CONTACT</Nav.Link>
+              <Nav.Link href="#About" className="nav-link-custom">ABOUT</Nav.Link>
+              <Nav.Link href="#Menu" className="nav-link-custom">MENU</Nav.Link>
+              <Nav.Link href="#Portfolio" className="nav-link-custom">PORTFOLIO</Nav.Link>
 
-            {/* Book a Table Button */}
-            <div className="mt-3 mt-lg-0">
-              <CustomButton text="BOOK A TABLE" />
-            </div>
+              {/* Contact link opens modal */}
+              <Nav.Link
+                className="nav-link-custom"
+                onClick={() => setShowContact(true)}
+                style={{ cursor: "pointer" }}
+              >
+                CONTACT
+              </Nav.Link>
 
-          </Nav>
-        </Navbar.Collapse>
+              {/* Book a Table Button */}
+              <div className="mt-3 mt-lg-0">
+                <a href="#Booktable"><CustomButton text="BOOK A TABLE" /></a>
+              </div>
 
-      </Container>
-    </Navbar>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
+
+
+      <PopupForm show={showContact} handleClose={() => setShowContact(false)} />
+
+    </>
   );
 };
 

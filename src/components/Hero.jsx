@@ -17,7 +17,7 @@ const Hero = () => {
     >
       <Container fluid>
         <Row>
-          <Col md={6} sm={12} className="ps-4 ms-0 ps-lg-5 ms-lg-5">
+          <Col md={6} sm={12} className="ps-4 ms-0 ps-lg-5 ms-lg-5 ">
             <span className="banner-heading">Welcome</span>
             <h1 className="mt-2 ">
               The Ultimate Place for Enjoy Your Meal and Collect Memorable Moments.
@@ -25,6 +25,9 @@ const Hero = () => {
 
             <CustomButton text="BOOK A TABLE" className="mt-5" />
           </Col>
+          <div className="scroll-down">
+            <i className="bi bi-chevron-double-down"></i>
+          </div>
         </Row>
       </Container>
     </section>

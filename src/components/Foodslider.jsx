@@ -13,7 +13,7 @@ import myslide5 from "../assets/images/slide5.png";
 
 const Foodslider = () => {
     return (
-        <div className='foodslider-sec py-5' style={{ backgroundColor: '#0E2625' }}>
+        <div id='Portfolio' className='foodslider-sec py-5' style={{ backgroundColor: '#0E2625' }}>
             <Container fluid>
                 <Row className="text-center mb-5">
                     <span className="heading-style">Mett Resturant</span>
