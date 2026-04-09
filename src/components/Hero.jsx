@@ -11,7 +11,7 @@ const Hero = () => {
       style={{
         backgroundImage: `url(${bannerBg})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "bottom",
         height: "100vh",
         minHeight: "700px",
       }}
@@ -25,7 +25,7 @@ const Hero = () => {
           >
             <span className="banner-heading">Welcome</span>
             <h1 className="mt-3 display-4 fw-bold">
-              Enjoy Your Meal and Collect Memorable Moments.
+              The Ultimate Place for Enjoy <br /> Your Meal and Collect <br /> Memorable Moments.
             </h1>
 
             <div className="mt-4">

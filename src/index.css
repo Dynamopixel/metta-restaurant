@@ -649,10 +649,7 @@ font-size: 1.3rem !important;
   gap: 10px;
 }
 
-.custom-input-group .input-icon {
-  color: #d4af37; /* yellow icon */
-  font-size: 1.2rem;
-}
+
 
 /* Textarea */
 .reservation-form textarea {

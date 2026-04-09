@@ -1,6 +1,9 @@
 import { Container, Form, Image, Row, Col, Button } from "react-bootstrap";
 import contactImg from "../assets/images/conatct.png";
 import CustomButton from './CustomButton';
+import Clock from "../assets/images/clock.png";
+import Calender from "../assets/images/calender.png";
+
 
 
 const Contactsection = () => {
@@ -50,7 +53,7 @@ const Contactsection = () => {
                                 <div className="col-md-6">
                                     <div className="input-group custom-input-group">
                                         <span className="input-icon">
-                                            <i className="bi bi-clock"></i>
+                                            {/* <img src={Clock} /> */}
                                         </span>
                                         <input type="time" name="time" required />
                                     </div>
@@ -58,8 +61,8 @@ const Contactsection = () => {
 
                                 <div className="col-md-6">
                                     <div className="input-group custom-input-group">
-                                        <span className="input-icon">
-                                            <i className="bi bi-calendar3"></i>
+                                        <span className="input-icon" >
+                                            {/* <img src={Calender} /> */}
                                         </span>
                                         <input type="date" name="date" required />
                                     </div>
