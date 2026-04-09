@@ -5,7 +5,8 @@ import CustomButton from './CustomButton';
 
 const Aboutsection = () => {
     return (
-        <section id='About' className='custom-space text-light' style={{backgroundColor:"transparent"}} >
+        <section id='About' className='custom-space text-light' style={{ backgroundColor: "transparent" }} >
+            
             <Container fluid>
                 <Row className='align-items-center'>
 

@@ -23,6 +23,7 @@ const Footer = () => {
               <a href="#" className="nav-link">Portfolio</a>
               <a href="#" className="nav-link">Blogs</a>
               <a href="#" className="nav-link">Contact</a>
+              
             </div>
          
           </Col>
