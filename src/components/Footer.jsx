@@ -36,7 +36,7 @@ const Footer = () => {
           <Col xs={12} md={3} className='foot'>
             <h6 className='text-sm-start '>Address :</h6>
             <hr style={{ width: "120px", backgroundColor: "#fff", height: "1px", opacity: "100" }} />
-            <p className="small lh-lg">
+            <p className="small lh-lg business">
               123 Fashion Avenue<br />
               Suite 456<br />
               New York, NY 10001<br />
@@ -47,7 +47,7 @@ const Footer = () => {
           <Col xs={12} md={3} className='foot'>
             <h6>Business Hours :</h6>
             <hr style={{ width: "120px", backgroundColor: "#fff", height: "1px", opacity: "100" }}  />
-            <p className="small lh-lg">
+            <p className="small lh-lg business">
               Mon - Fri: 9:00 AM - 10:00 PM<br />
               Saturday: 10:00 AM - 7:00 PM<br />
               Sunday: Closed

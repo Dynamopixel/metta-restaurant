@@ -62,7 +62,10 @@ const Foodslider = () => {
                     breakpoints={{
                         576: { slidesPerView: 2 },
                         768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 5 },
+                        1024: { slidesPerView: 4 },   
+                        1280: { slidesPerView: 3 },     
+                        1600: { slidesPerView: 3 },     
+                        1920: { slidesPerView: 3 },
                     }}
                     onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                     style={{ padding: "20px 0" }}
@@ -90,22 +93,22 @@ const Foodslider = () => {
                                             bottom: "50px",
                                             left: "50%",
                                             transform: "translateX(-50%)",
-                                            background: "linear-gradient(135deg, rgba(212,175,55,0.3), rgba(14,38,37,0.3))",   
-                                            backdropFilter: "blur(12px)",              
-                                            WebkitBackdropFilter: "blur(12px)",  
+                                            background: "linear-gradient(135deg, rgba(212,175,55,0.3), rgba(14,38,37,0.3))",
+                                            backdropFilter: "blur(12px)",
+                                            WebkitBackdropFilter: "blur(12px)",
                                             padding: "16px 60px",
                                             borderRadius: "5px",
                                             color: "#ffffff",
                                             fontWeight: "600",
                                             fontSize: "16px",
-                                           whiteSpace: "nowrap",
+                                            whiteSpace: "nowrap",
                                             textAlign: "center",
                                             minWidth: "180px",
-                                            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.1)", 
-                                            border: "1px solid rgba(255, 255, 255, 0.2)", 
+                                            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.1)",
+                                            border: "1px solid rgba(255, 255, 255, 0.2)",
                                         }}
                                     >
-                                          {slide.name}
+                                        {slide.name}
                                     </div>
                                 )}
                             </div>

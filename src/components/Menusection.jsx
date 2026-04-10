@@ -4,12 +4,12 @@ import { Container, Row, Col, Nav } from 'react-bootstrap';
 const menuData = {
   appetizers: [
     { name: "Spaghetti Alla Carbonara", price: 49, desc: "Lorem passionate chefs masterfully" },
-    { name: "CROQUETAS DE JAMÓN", price: 19, desc: "Lorem passionate chefs masterfully" },
+    { name: "Golden Saffron Risotto", price: 19, desc: "Lorem passionate chefs masterfully" },
     { name: "Paella Valenciana", price: 59, desc: "Lorem passionate chefs masterfully" },
     { name: "Peri Peri Prawns", price: 39, desc: "Lorem passionate chefs masterfully" },
     { name: "Golden Saffron Risotto", price: 99, desc: "Lorem passionate chefs masterfully" },
     { name: "Spaghetti Alla Carbonara", price: 49, desc: "Lorem passionate chefs masterfully" },
-    { name: "CROQUETAS DE JAMÓN", price: 19, desc: "Lorem passionate chefs masterfully" },
+    { name: "Golden Saffron Risotto", price: 19, desc: "Lorem passionate chefs masterfully" },
     { name: "Peri Peri Prawns", price: 39, desc: "Lorem passionate chefs masterfully" },
 
   ],
@@ -18,7 +18,7 @@ const menuData = {
     { name: "Butter Poached Lobster", price: 89, desc: "Lorem passionate chefs masterfully" },
   ],
   chinese: [
-    { name: "CROQUETAS DE JAMÓN", price: 19, desc: "Lorem passionate chefs masterfully" },
+    { name: "Golden Saffron Risotto", price: 19, desc: "Lorem passionate chefs masterfully" },
   ],
   indian: [
     { name: "Peri Peri Prawns", price: 39, desc: "Lorem passionate chefs masterfully" },
