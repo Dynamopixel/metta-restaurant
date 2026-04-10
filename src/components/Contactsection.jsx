@@ -1,12 +1,70 @@
 import { Container, Form, Image, Row, Col, Button } from "react-bootstrap";
 import contactImg from "../assets/images/conatct.png";
 import CustomButton from './CustomButton';
-import Clock from "../assets/images/clock.png";
-import Calender from "../assets/images/calender.png";
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
+// import Clock from "../assets/images/clock.png";
+// import Calender from "../assets/images/calender.png";
 
 
 
 const Contactsection = () => {
+
+    const [formData, setFormData] = useState({
+        name: "",
+        guests: "1",
+        time: "",
+        date: "",
+        phone: "",
+        specialInstructions: "",
+    })
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleFocus = (e) => {
+    e.target.showPicker();
+};
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.send(
+            "service_r5l6deg",     // EmailJS se
+            "template_na5bdvk",    // EmailJS template
+            {
+                name: formData.name,
+                guests: formData.guests,
+                time: formData.time,
+                date: formData.date,
+                phone: formData.phone,
+                specialInstructions: formData.specialInstructions,
+            },
+            "WxaRXt4X4HPanM-bY"      // EmailJS public key
+        )
+            .then((result) => {
+                console.log("SUCCESS:", result.text);
+                alert("Reservation sent successfully!");
+
+                setFormData({
+                    name: "",
+                    guests: "1",
+                    time: "",
+                    date: "",
+                    phone: "",
+                    specialInstructions: ""
+                });
+            })
+            .catch((error) => {
+                console.log("ERROR:", error.text);
+                alert("Failed to send reservation");
+            });
+    }
+
     return (
         <section id="Booktable" className='custom-space text-light conatct-sec'>
             <Container fluid>
@@ -25,13 +83,15 @@ const Contactsection = () => {
                     <Col xs={12} md={6} className="mb-4 mb-md-0 text-center col-custom-space  ">
                         <span className="heading-style">Reservation</span>
                         <h2 className="text-center ">Book a Table</h2>
-                        <form className="ps-0 ps-lg-5 text-start reservation-form">
+                        <form onSubmit={handleSubmit} className="ps-0 ps-lg-5 text-start reservation-form">
 
                             {/* Name */}
                             <div className="mb-3">
                                 <input
                                     type="text"
                                     name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
                                     placeholder="Name"
                                     required
                                 />
@@ -39,7 +99,11 @@ const Contactsection = () => {
 
                             {/* Guests */}
                             <div className="mb-3">
-                                <select name="guests">
+                                <select
+                                    name="guests"
+                                    value={formData.guests}
+                                    onChange={handleChange}
+                                >
                                     <option value="1">1 Person</option>
                                     <option value="2">2 People</option>
                                     <option value="3">3 People</option>
@@ -55,7 +119,14 @@ const Contactsection = () => {
                                         <span className="input-icon">
                                             {/* <img src={Clock} /> */}
                                         </span>
-                                        <input type="time" name="time" required />
+                                        <input
+                                            type="time"
+                                            name="time"
+                                            value={formData.time}
+                                             onFocus={(e) => e.target.showPicker()}   
+                                            onChange={handleChange}
+                                            required
+                                        />
                                     </div>
                                 </div>
 
@@ -64,7 +135,14 @@ const Contactsection = () => {
                                         <span className="input-icon" >
                                             {/* <img src={Calender} /> */}
                                         </span>
-                                        <input type="date" name="date" required />
+                                        <input
+                                            type="date"
+                                            name="date"
+                                            value={formData.date}
+                                            onChange={handleChange}
+                                             onFocus={(e) => e.target.showPicker()}
+                                            required
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -73,6 +151,8 @@ const Contactsection = () => {
                             <div className="mb-3">
                                 <textarea
                                     name="specialInstructions"
+                                    value={formData.specialInstructions}
+                                    onChange={handleChange}
                                     rows="3"
                                     placeholder="Special Instructions"
                                 ></textarea>
@@ -84,6 +164,8 @@ const Contactsection = () => {
                                     <input
                                         type="tel"
                                         name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
                                         placeholder="Phone Number"
                                         required
                                     />

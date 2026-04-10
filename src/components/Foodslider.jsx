@@ -17,14 +17,14 @@ import myslide9 from "../assets/images/slide5.png";
 
 const Foodslider = () => {
     const slides = [
-        { img: myslide1, name: "Herbed Avocado" },
+        { img: myslide1, name: " Avocado" },
         { img: myslide2, name: "Tuna Tataki" },
         { img: myslide3, name: "Beef Stroganoff " },
         { img: myslide4, name: "Spaghetti" },
         { img: myslide5, name: "Spaghetti Bolognese " },
-        { img: myslide6, name: "Herbed Avocado" },
+        { img: myslide6, name: " Avocado" },
         { img: myslide7, name: "Tuna Tataki" },
-        { img: myslide8, name: "Beef Stroganoff " },
+        { img: myslide8, name: "Beef-Stroganoff " },
         { img: myslide9, name: "Spaghetti" },
     ];
 
@@ -40,7 +40,7 @@ const Foodslider = () => {
                 <Row className="text-center mb-5">
                     <span className="heading-style">Mett Resturant</span>
                     <h2 className="text-white mt-2">Chef's Special</h2>
-                    <p className="text-white mx-auto" style={{ maxWidth: "700px" }}>
+                    <p className="text-white text-center mx-auto" style={{ maxWidth: "700px" }}>
                         Welcome to our restaurant, where culinary artistry meets exceptional
                         dining experiences. At Mett, we strive to create a gastronomic haven
                         that tantalizes your taste buds.
@@ -48,19 +48,19 @@ const Foodslider = () => {
                 </Row>
 
                 <Swiper
-                    slidesPerView={3}
+                    slidesPerView={1}
                     spaceBetween={20}
                     loop={true}
-                    speed={3000}
+                    speed={4000}
                     autoplay={{
-                        delay: 2500,
+                        delay: 0,
                         disableOnInteraction: false,
                     }}
                     grabCursor={true}
                     centeredSlides={true}
                     modules={[Navigation, Autoplay]}
                     breakpoints={{
-                        576: { slidesPerView: 1 },
+                        576: { slidesPerView: 2 },
                         768: { slidesPerView: 2 },
                         1024: { slidesPerView: 5 },
                     }}
@@ -93,11 +93,12 @@ const Foodslider = () => {
                                             background: "linear-gradient(135deg, rgba(212,175,55,0.3), rgba(14,38,37,0.3))",   
                                             backdropFilter: "blur(12px)",              
                                             WebkitBackdropFilter: "blur(12px)",  
-                                            padding: "12px 28px",
+                                            padding: "16px 60px",
                                             borderRadius: "5px",
                                             color: "#ffffff",
                                             fontWeight: "600",
                                             fontSize: "16px",
+                                           whiteSpace: "nowrap",
                                             textAlign: "center",
                                             minWidth: "180px",
                                             boxShadow: "0 4px 15px rgba(0, 0, 0, 0.1)", 

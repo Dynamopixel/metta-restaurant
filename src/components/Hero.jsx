@@ -11,12 +11,17 @@ const Hero = () => {
       style={{
         backgroundImage: `url(${bannerBg})`,
         backgroundSize: "cover",
-        backgroundPosition: "bottom",
-        height: "100vh",
-        minHeight: "700px",
+        backgroundPosition: "center",
+        
+       
+        minHeight: "100dvh",     
+        height: "100dvh",       
+        
+        marginTop: "0",
+        paddingTop: "0",
       }}
     >
-      <Container fluid>
+      <Container fluid className="h-100">
         <Row className="h-100">
           <Col
             md={6}
@@ -24,15 +29,17 @@ const Hero = () => {
             className="ps-4 ps-lg-5 ms-lg-5 d-flex flex-column justify-content-center"
           >
             <span className="banner-heading">Welcome</span>
-            <h1 className="mt-3 display-4 fw-bold">
-              The Ultimate Place for Enjoy <br /> Your Meal and Collect <br /> Memorable Moments.
+            <h1 className="mt-0 mt-lg-3 display-4 fw-bold">
+              The Ultimate Place for Enjoy <br /> 
+              Your Meal and Collect <br /> 
+              Memorable Moments.
             </h1>
 
             <div className="mt-4">
               <CustomButton text="BOOK A TABLE" />
-
             </div>
-            <div className="scroll-down">
+
+            <div className="scroll-down mt-auto pt-5 pb-4">
               <a href="#About">
                 <img
                   src={Arrow}
@@ -44,9 +51,6 @@ const Hero = () => {
           </Col>
         </Row>
       </Container>
-
-
-
     </section>
   );
 };

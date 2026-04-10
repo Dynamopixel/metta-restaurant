@@ -15,7 +15,11 @@ const MyNavbar = () => {
             <Image src={Logo} height={55} alt="Metta Restaurant" />
           </Navbar.Brand>
 
-          <Navbar.Toggle aria-controls="navbarScroll" className="border-0" />
+          <Navbar.Toggle aria-controls="navbarScroll" className="custom-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+          </Navbar.Toggle>
 
           <Navbar.Collapse id="navbarScroll">
             <Nav className="ms-auto align-items-center gap-lg-5 gap-3 text-center mt-4 mt-lg-0">
@@ -32,7 +36,7 @@ const MyNavbar = () => {
               >
                 CONTACT
               </Nav.Link>
-              
+
 
               {/* Book a Table Button */}
               <div className="mt-3 mt-lg-0">

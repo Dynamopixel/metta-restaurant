@@ -36,6 +36,8 @@ body {
   background: #0e2625;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -588,7 +590,7 @@ font-size: 1.3rem !important;
 }
 .contact-formm input, input::placeholder{
   margin-bottom: 10px;
-  color: rgb(137, 137, 137);
+  color: rgb(0, 0, 0);
 }
 
 .submit-btn {
@@ -614,18 +616,22 @@ font-size: 1.3rem !important;
 .reservation-form input,
 .reservation-form select,
 .reservation-form textarea {
+  cursor: text;
   width: 100%;
   padding: 14px 20px;
   border-radius: 0px;
   border: 1px solid #d4af37; 
+      background: #061110;
   color: #fff;
   font-size: 1rem;
   outline: none;
   transition: all 0.3s ease;
 }
 
-.custom-input-group .input-icon i {
-  color: #d4af37 !important;
+.reservation-form select,
+.reservation-form input[type="date"],
+.reservation-form input[type="time"] {
+    cursor: pointer;
 }
 
 
@@ -649,7 +655,15 @@ font-size: 1.3rem !important;
   gap: 10px;
 }
 
-
+input[type="date"],
+input[type="time"] {
+  -webkit-appearance: none;  
+  -moz-appearance: none;     
+  appearance: none;
+  color: #000 !important; 
+  background-color: #d4af37;     
+  padding-left: 10px;
+}
 
 /* Textarea */
 .reservation-form textarea {
@@ -664,6 +678,9 @@ font-size: 1.3rem !important;
 }
 
 /* contact section form class */
+.contact-formm textarea{
+   color: #000 !important;
+}
 
 
 /* responsive media queries */
@@ -689,23 +706,25 @@ font-size: 1.3rem !important;
 
   .custom-space {
     align-items: center;
-    padding: 40px 20px;
+    padding: 40px 27px;
     width: 100%;
-  }
+}
+
 
   .about-img {
     width: 100%;
-    height: 800px;
+    height: 600px;
     object-fit: cover;
   }
 
   .food-img {
-    height: 500px !important;
+    height: 550px !important;
   }
 
   .food2-img {
-    height: 350px !important;
-  }
+    height: 219px !important;
+    object-fit: contain;
+}
 
   .food-cnt {
     padding-right: 0px !important;
@@ -769,10 +788,42 @@ font-size: 1.3rem !important;
   .menu-price {
     font-size: 1.3rem;
   }
+.menu-name {
+    font-size: 1.2rem !important;
+}
+.menu-divider {
+    position: absolute;
+    left: 59%;
+    top: 13px;
+    background-color: #FFD28D;
+    width: 18%;
+    height: 1px;
+}
+.menu-divider2 {
+    position: absolute;
+    left: 59%;
+    top: 18px;
+    background-color: #FFD28D;
+    width: 18%;
+    height: 1px;
+}
+
   .reservation-form {
     padding-left: 0;
     padding-right: 0;
   }
+
+   .left-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 100%;
+}
+.right-overlay {
+    right: 0;
+    width: 130px;
+}
 
 }
 
@@ -786,35 +837,75 @@ font-size: 1.3rem !important;
     font-size: 40px !important;
   }
 
-
+ .slider-img {
+    height: 450px;
+    object-fit: cover;
+  }
 
   .navbar {
     background-color: #0E2625;
     z-index: 50;
   }
 
-  .navbar-toggler-icon {
-    background-color: #FFD28D;
 
-  }
+/* Square border */
+.custom-toggler {
+    border: 2px solid ffd28d !important;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    width: 45px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+}
 
-  .navbar-custom .navbar-toggler {
-    border: none !important;
-    box-shadow: none !important;
-  }
+/* remove bootstrap default icon */
+.custom-toggler .navbar-toggler-icon {
+    display: none;
+}
+
+/* 3 lines */
+.custom-toggler span {
+    width: 22px;
+    height: 2px;
+    background-color: #ffd28d;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+/* when menu is open (bootstrap adds .collapsed FALSE state) */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
 
   .navbar-toggler:focus {
     box-shadow: none !important;
   }
+  button.custom-toggler.navbar-toggler.collapsed {
+    border: 2px solid #ffd28d !important;
+}
+  
 
-  .hero {
-    position: relative;
-    bottom: 102px;
-    z-index: 10;
+ .hero {
+    min-height: 100dvh;
+    height: 100dvh;
   }
 
   .custom-space {
-    padding: 30px 25px;
+    padding: 30px 18px;
   }
 
   .col-custom-space {
@@ -855,8 +946,24 @@ font-size: 1.3rem !important;
   }
 
   .conatct-sec {
-    padding-top: 110px;
+    padding-top: 130px;
+    
   }
+  .mb-4.mb-md-0.text-center.col-custom-space.col-md-6.col-12 {
+    padding: 6px !important;
+}
+
+  .left-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+}
+.right-overlay {
+    right: 0;
+    width: 80px;
+}
 
   .contact-img {
     width: 100%;
@@ -893,4 +1000,79 @@ font-size: 1.3rem !important;
     text-align: left;
     min-width: auto;
   }
+
+.foot-nav{
+    margin-left: 12px;
+}
+
+   .foot-nav {
+    /* flex-direction: column; */
+    gap: 0px;
+    text-align: center;
+  }
+
+  .foot-nav .nav-link {
+    font-size: 14px;
+  }
+
+  /* Hide scrollbar only for menu tabs */
+.menu-tabs {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.menu-tabs::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+.menu-tabs-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu-tabs {
+   display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  gap: 10px;
+  padding: 5px 10px;
+}
+.menu-item {
+  flex-wrap: nowrap;
+
+}
+
+.menu-left {
+  max-width: 70%;
+}
+
+.menu-right {
+  white-space: nowrap;
+}
+.menu-extra {
+    font-size: 15px !important;
+}
+.menu-desc{
+  font-size: 15px !important;
+}
+
+.menu-divider {
+    position: absolute;
+    left: 62%;
+    top: 13px;
+    background-color: #FFD28D;
+    width: 16%;
+    height: 1px;
+}
+.menu-divider2 {
+    position: absolute;
+    left: 62%;
+    top: 18px;
+    background-color: #FFD28D;
+    width: 16%;
+    height: 1px;
+}
+
+
 }
