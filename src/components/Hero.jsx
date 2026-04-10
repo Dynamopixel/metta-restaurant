@@ -12,11 +12,8 @@ const Hero = () => {
         backgroundImage: `url(${bannerBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        
-       
         minHeight: "100dvh",     
         height: "100dvh",       
-        
         marginTop: "0",
         paddingTop: "0",
       }}
@@ -29,11 +26,11 @@ const Hero = () => {
             className="ps-4 ps-lg-5 ms-lg-5 d-flex flex-column justify-content-center"
           >
             <span className="banner-heading">Welcome</span>
-            <h1 className="mt-0 mt-lg-3 display-4 fw-bold">
-              The Ultimate Place for Enjoy <br /> 
-              Your Meal and Collect <br /> 
-              Memorable Moments.
+            <h1  className="mt-0 mt-lg-3  fw-bold hero-heading">
+              The Ultimate Place for Enjoy 
+              
             </h1>
+           <h3 className='herosubhead' >Your Meal and Collect  Memorable Moments.</h3>
 
             <div className="mt-4">
               <CustomButton text="BOOK A TABLE" />

@@ -30,105 +30,89 @@ const LogoSlider = () => {
                     {/* Right Blur Overlay */}
                     <div className="slider-overlay right-overlay"></div>
 
-                    
-                    <Swiper
-                        slidesPerView={1}
-                        spaceBetween={40}
-                        loop={true}
 
+                    {/* First Row - Left to Right */}
+                    <Swiper
+                        slidesPerView={2}           // Mobile pe directly 2
+                        spaceBetween={15}           // Kam space mobile ke liye
+                        loop={true}
                         freeMode={true}
-                        speed={3000}
+                        speed={2500}
                         autoplay={{
                             delay: 0,
                             disableOnInteraction: false,
                         }}
                         grabCursor={true}
-                        centeredSlides={false}
-                        modules={[Navigation, Autoplay]}
+                        modules={[Autoplay]}
                         breakpoints={{
-                            320: { slidesPerView: 1, spaceBetween: 5 },   // mobile
-                            576: { slidesPerView: 2, spaceBetween: 10 },  // small tablet
-                            768: { slidesPerView: 3, spaceBetween: 20 },  // desktop
-                            1024: { slidesPerView: 5, spaceBetween: 40 }, // large desktop
+                            320: { slidesPerView: 2, spaceBetween: 12 },   // Small mobile
+                            480: { slidesPerView: 2, spaceBetween: 15 },
+                            768: { slidesPerView: 3, spaceBetween: 25 },
+                            1024: { slidesPerView: 5, spaceBetween: 40 },
                         }}
-                        style={{ padding: "20px 0" }}
+                        style={{ padding: "15px 0" }}
                     >
                         <SwiperSlide>
-                            <img src={frame1} alt="slide 1" className="logo-slider-img" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img src={frame2} alt="slide 2" className="logo-slider-img" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img src={frame3} alt="slide 3" className="logo-slider-img" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img src={frame4} alt="slide 4" className="logo-slider-img" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img src={frame5} alt="slide 5" className="logo-slider-img" />
+                            <img src={frame1} alt="brand" className="logo-slider-img" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={frame6} alt="slide 1" className="logo-slider-img" />
+                            <img src={frame2} alt="brand" className="logo-slider-img" />
                         </SwiperSlide>
-
-                        <div className="swiper-button-prev"></div>
-                        <div className="swiper-button-next"></div>
+                        <SwiperSlide>
+                            <img src={frame3} alt="brand" className="logo-slider-img" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={frame4} alt="brand" className="logo-slider-img" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={frame5} alt="brand" className="logo-slider-img" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={frame6} alt="brand" className="logo-slider-img" />
+                        </SwiperSlide>
                     </Swiper>
 
+                    {/* Second Row - Right to Left (Reverse) */}
                     <Swiper
-                        slidesPerView={1}
-                        spaceBetween={40}
+                        slidesPerView={2}
+                        spaceBetween={15}
                         loop={true}
-
                         freeMode={true}
-                        speed={3000}
+                        speed={2500}
                         autoplay={{
                             delay: 0,
                             disableOnInteraction: false,
                             reverseDirection: true,
                         }}
-
                         grabCursor={true}
-                        centeredSlides={false}
-                        modules={[Navigation, Autoplay]}
+                        modules={[Autoplay]}
                         breakpoints={{
-                            320: { slidesPerView: 1, spaceBetween: 5 },   // mobile
-                            576: { slidesPerView: 2, spaceBetween: 10 },  // small tablet
-                            768: { slidesPerView: 3, spaceBetween: 20 },  // desktop
-                            1024: { slidesPerView: 5, spaceBetween: 40 }, // large desktop
+                            320: { slidesPerView: 2, spaceBetween: 12 },
+                            480: { slidesPerView: 2, spaceBetween: 15 },
+                            768: { slidesPerView: 3, spaceBetween: 25 },
+                            1024: { slidesPerView: 5, spaceBetween: 40 },
                         }}
-                        style={{ padding: "20px 0" }}
+                        style={{ padding: "15px 0" }}
                     >
+                        {/* Same images */}
                         <SwiperSlide>
-                            <img src={frame1} alt="slide 1" className="logo-slider-img" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img src={frame2} alt="slide 2" className="logo-slider-img" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img src={frame3} alt="slide 3" className="logo-slider-img" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img src={frame4} alt="slide 4" className="logo-slider-img" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <img src={frame5} alt="slide 5" className="logo-slider-img" />
+                            <img src={frame1} alt="brand" className="logo-slider-img" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={frame6} alt="slide 1" className="logo-slider-img" />
+                            <img src={frame2} alt="brand" className="logo-slider-img" />
                         </SwiperSlide>
-
-                        <div className="swiper-button-prev"></div>
-                        <div className="swiper-button-next"></div>
+                        <SwiperSlide>
+                            <img src={frame3} alt="brand" className="logo-slider-img" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={frame4} alt="brand" className="logo-slider-img" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={frame5} alt="brand" className="logo-slider-img" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={frame6} alt="brand" className="logo-slider-img" />
+                        </SwiperSlide>
                     </Swiper>
 
                 </div>

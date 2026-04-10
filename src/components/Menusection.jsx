@@ -94,25 +94,25 @@ const MenuSection = () => {
 
         {/* Menu Items - Exact two-column layout */}
         <Container className="menu-items py-5">
-          <Row className="gx-5 gy-4">
+          <Row className="gx-5 gy-3">
             {currentItems.map((item, index) => (
               <Col xs={12} md={6} key={index} className="menu-item-row">
-                <div className="menu-item d-flex flex-column flex-sm-row justify-content-between align-items-start gap-2">
+                <div className="menu-item d-flex flex-row flex-sm-row justify-content-between align-items-start gap-2 ">
 
                   <div className="menu-left">
-                    <h5 className="menu-name">{item.name}</h5>
+                    <h5 className="menu-name ">{item.name}</h5>
                     <p className="menu-desc text-white">{item.desc}</p>
                   </div>
 
                   <div className="menu-right text-start text-sm-end">
-                    <div className="menu-price">${item.price}</div>
+                    <div className="menu-price text-end">${item.price}</div>
                     <p className="menu-extra text-white">Extra free juices</p>
                   </div>
 
                 </div>
 
-                <div className="menu-divider"></div>
-                <div className="menu-divider2"></div>
+                <div className="menu-divider d-none d-sm-block"></div>
+                <div className="menu-divider2 d-none d-sm-block"></div>
               </Col>
             ))}
           </Row>

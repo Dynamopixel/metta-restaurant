@@ -113,7 +113,7 @@ const Contactsection = () => {
                             </div>
 
                             {/* Time and Date in One Line */}
-                            <div className="row mb-3">
+                            <div className="row mb-3 timedate-sec">
                                 <div className="col-md-6">
                                     <div className="input-group custom-input-group">
                                         <span className="input-icon">
