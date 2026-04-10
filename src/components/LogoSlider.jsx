@@ -16,7 +16,7 @@ const LogoSlider = () => {
     return (
         <div className='logoslider py-5' >
             <Container fluid>
-                <Row className="text-center mb-5">
+                <Row className="text-center mb-0 mb-lg-4">
                     <span className="heading-style">Mett Resturant</span>
                     <h2 className="text-white mt-2">Our Brands</h2>
 

@@ -62,9 +62,9 @@ const Foodslider = () => {
                     breakpoints={{
                         576: { slidesPerView: 2 },
                         768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 4 },   
-                        1280: { slidesPerView: 3 },     
-                        1600: { slidesPerView: 3 },     
+                        1024: { slidesPerView: 5 },   
+                        1280: { slidesPerView: 5 },     
+                        1600: { slidesPerView: 5 },     
                         1920: { slidesPerView: 3 },
                     }}
                     onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}

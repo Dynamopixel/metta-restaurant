@@ -16,7 +16,6 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #0E2625;
-  overflow-x: none;
 }
 
 ::-webkit-scrollbar {
@@ -68,14 +67,14 @@ p {
 
 .heading-style {
   font-size: 32px;
-  color: #d4af37;
+  color: #FFD28D;
   font-family: "Mrs Saint Delafield", cursive;
   font-weight: 400;
 }
 
 .banner-heading {
   font-size: 62px;
-  color: #d4af37;
+  color: #FFD28D;
   letter-spacing: 10px;
   font-family: "Mrs Saint Delafield", cursive;
   font-weight: 400;
@@ -122,7 +121,7 @@ p {
 
 .nav-link-custom:hover,
 .nav-link-custom.active {
-  color: #d4af37 !important;
+  color: #FFD28D !important;
 }
 
 /* custom navbar  */
@@ -170,7 +169,7 @@ p {
 
 .scroll-down {
   font-size: 62px;
-  color: #d4af37;
+  color: #FFD28D;
   animation: bounce 2.2s infinite ease-in-out;
   display: block;
 }
@@ -227,7 +226,7 @@ p {
 
 .input-group span .custom-icon {
   font-size: 20px !important;
-  color: #d4af37;
+  color: #FFD28D;
 }
 
 form input {
@@ -602,9 +601,9 @@ a.menu-tab.nav-link {
 }
 
 .menu-price {
-  color: #d4af37;
+  color: #FFD28D;
   font-size: 1.45rem;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 4px;
 }
 
@@ -626,14 +625,14 @@ input::placeholder {
   margin: 20px auto 0;
 
   background-color: #0e2625 !important;
-  color: #d4af37 !important;
+  color: #FFD28D !important;
   border: none !important;
   padding: 12px 0 !important;
   border-radius: 8px;
 }
 
 .submit-btn:hover {
-  background-color: #d4af37 !important;
+  background-color: #FFD28D !important;
   color: #0e2625 !important;
 }
 
@@ -647,7 +646,7 @@ input::placeholder {
   width: 100%;
   padding: 14px 20px;
   border-radius: 0px;
-  border: 1px solid #d4af37;
+  border: 1px solid #FFD28D;
   background: #061110;
   color: #fff;
   font-size: 1rem;
@@ -689,7 +688,7 @@ input[type="time"] {
   -moz-appearance: none;
   appearance: none;
   color: #000 !important;
-  background-color: #d4af37;
+  background-color: #FFD28D;
   padding-left: 10px;
 }
 
@@ -702,7 +701,7 @@ input[type="time"] {
 .reservation-form select {
   color: #fff;
   border-radius: 0px;
-  border: 1px solid #d4af37;
+  border: 1px solid #FFD28D;
 }
 
 /* contact section form class */
@@ -882,7 +881,6 @@ nav.navbar-custom.py-3.px-3.px-lg-5.navbar.navbar-expand-lg.navbar-light {
     padding: 50px 50px 40px 50px;
   }
 
-  /* Testimonial Responsive Styling */
 
   .mySwiper .swiper-slide {
     padding: 20px 0;
@@ -893,7 +891,7 @@ nav.navbar-custom.py-3.px-3.px-lg-5.navbar.navbar-expand-lg.navbar-light {
     margin-top: 20px;
   }
 
-  /* Dots Styling */
+
   .mySwiper .swiper-pagination-bullet {
     background-color: #ffeaa7;
     /* Light Yellow */
@@ -904,7 +902,7 @@ nav.navbar-custom.py-3.px-3.px-lg-5.navbar.navbar-expand-lg.navbar-light {
 
   .mySwiper .swiper-pagination-bullet-active {
     background-color: #0A1F1E;
-    /* Dark Color */
+  
     width: 13px;
     height: 13px;
     opacity: 1;
@@ -953,7 +951,7 @@ nav.navbar-custom.py-3.px-3.px-lg-5.navbar.navbar-expand-lg.navbar-light {
     width: 100%;
     object-fit: cover;
     height: 650px;
-}
+} 
   
 }
 
@@ -1384,7 +1382,7 @@ nav.navbar-custom.py-3.px-3.px-lg-5.navbar.navbar-expand-lg.navbar-light {
 
   /* Thumb (moving part) */
   .menu-tabs::-webkit-scrollbar-thumb {
-    background: #d4af37;
+    background: #FFD28D;
     /* golden */
     border-radius: 10px;
   }
@@ -1627,10 +1625,12 @@ nav.navbar-custom.py-3.px-3.px-lg-5.navbar.navbar-expand-lg.navbar-light {
   h5 {
     font-size: 40px !important;
   }
+ 
 
   .slider-img {
     height: 450px;
     object-fit: cover;
+    width: 80%;
   }
  .business{
    text-align: center;
@@ -1824,7 +1824,6 @@ nav.navbar-custom.py-3.px-3.px-lg-5.navbar.navbar-expand-lg.navbar-light {
     font-size: 14px;
   }
 
-  /* Hide scrollbar only for menu tabs */
   .menu-tabs {
     scrollbar-width: none;
     /* Firefox */
@@ -1838,9 +1837,8 @@ nav.navbar-custom.py-3.px-3.px-lg-5.navbar.navbar-expand-lg.navbar-light {
   }
 
   .menu-tabs-wrapper {
-    width: 100%;
-    overflow: hidden;
-  }
+    padding: 0 10px !important;
+}
 
   .menu-tabs {
     display: flex;
@@ -1894,6 +1892,14 @@ nav.navbar-custom.py-3.px-3.px-lg-5.navbar.navbar-expand-lg.navbar-light {
   .timedate-sec {
     row-gap: 6px !important;
   }
-
+.herosubhead {
+    font-size: 26px !important;
+}
+.hero-heading {
+    font-size: 41px !important;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
 
 }

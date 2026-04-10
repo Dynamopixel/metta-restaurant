@@ -12,8 +12,8 @@ const Hero = () => {
         backgroundImage: `url(${bannerBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: "100dvh",     
-        height: "100dvh",       
+        minHeight: "100dvh",
+        height: "100dvh",
         marginTop: "0",
         paddingTop: "0",
       }}
@@ -23,14 +23,14 @@ const Hero = () => {
           <Col
             md={6}
             sm={12}
-            className="ps-4 ps-lg-5 ms-lg-5 d-flex flex-column justify-content-center"
+            className="ps-4 ps-lg-5 ms-lg-5 d-flex flex-column justify-content-center text-center text-md-start"
           >
             <span className="banner-heading">Welcome</span>
-            <h1  className="mt-0 mt-lg-3  fw-bold hero-heading">
-              The Ultimate Place for Enjoy 
-              
+            <h1 className="mt-0 mt-lg-3  fw-bold hero-heading">
+              The Ultimate Place
+
             </h1>
-           <h3 className='herosubhead' >Your Meal and Collect  Memorable Moments.</h3>
+            <h3 className='herosubhead' >for Enjoy Your Meal and Collect  Memorable Moments.</h3>
 
             <div className="mt-4">
               <CustomButton text="BOOK A TABLE" />
