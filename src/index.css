@@ -709,6 +709,9 @@ input[type="time"] {
   color: #000 !important;
 }
 
+.menu-tabs {
+    border-bottom: none !important;   
+}
 
 /* responsive media queries */
 
@@ -1751,7 +1754,7 @@ nav.navbar-custom.py-3.px-3.px-lg-5.navbar.navbar-expand-lg.navbar-light {
   }
 
   .conatct-sec {
-    padding-top: 130px;
+    padding-top: 40px;
 
   }
 

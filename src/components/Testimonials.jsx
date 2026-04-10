@@ -11,7 +11,7 @@ const Testimonials = () => {
     return (
         <section
             className="testimonial-section py-4 py-md-5 py-lg-6 custom-space text-center"
-            style={{ height: '60vh' }}
+            style={{ height: '50vh' }}
         >
             <div className="container">
 
@@ -32,8 +32,16 @@ const Testimonials = () => {
                 >
                     {/* Testimonial 1 */}
                     <SwiperSlide>
-                        <div className="text-center mx-auto px-3" style={{ maxWidth: '780px' }}>
-                            <div style={{ fontSize: '60px', color: '#d4af37', opacity: '0.7', marginBottom: '20px' }}>
+                        <div className="text-center mx-auto px-3 " style={{ maxWidth: '780px' }}>
+                            <div
+                                className='mb-0 mb-lg-4'          
+                                style={{
+                                    fontSize: '60px',
+                                    color: '#d4af37',
+                                    opacity: '0.7',
+                                    lineHeight: 1,            
+                                }}
+                            >
                                 “
                             </div>
                             <p className='text-center' style={{
@@ -53,7 +61,15 @@ const Testimonials = () => {
                     {/* Testimonial 2 */}
                     <SwiperSlide>
                         <div className="text-center mx-auto px-3" style={{ maxWidth: '780px' }}>
-                            <div style={{ fontSize: '60px', color: '#d4af37', opacity: '0.7', marginBottom: '20px' }}>
+                            <div
+                                className='mb-0 mb-lg-4'          
+                                style={{
+                                    fontSize: '60px',
+                                    color: '#d4af37',
+                                    opacity: '0.7',
+                                    lineHeight: 1,            
+                                }}
+                            >
                                 “
                             </div>
                             <p className='text-center' style={{
@@ -73,7 +89,15 @@ const Testimonials = () => {
                     {/* Testimonial 3 */}
                     <SwiperSlide>
                         <div className="text-center mx-auto px-3" style={{ maxWidth: '780px' }}>
-                            <div style={{ fontSize: '60px', color: '#d4af37', opacity: '0.7', marginBottom: '20px' }}>
+                             <div
+                                className='mb-0 mb-lg-4'          
+                                style={{
+                                    fontSize: '60px',
+                                    color: '#d4af37',
+                                    opacity: '0.7',
+                                    lineHeight: 1,            
+                                }}
+                            >
                                 “
                             </div>
                             <p className='text-center' style={{

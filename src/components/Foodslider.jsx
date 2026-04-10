@@ -60,12 +60,11 @@ const Foodslider = () => {
                     centeredSlides={true}
                     modules={[Navigation, Autoplay]}
                     breakpoints={{
-                        576: { slidesPerView: 2 },
-                        768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 5 },   
-                        1280: { slidesPerView: 5 },     
-                        1600: { slidesPerView: 5 },     
-                        1920: { slidesPerView: 3 },
+                        576: { slidesPerView: 2, spaceBetween: 15 },
+                        768: { slidesPerView: 3, spaceBetween: 20 },   
+                        1024: { slidesPerView: 4, spaceBetween: 25 },
+                        1200: { slidesPerView: 5, spaceBetween: 30 },    
+                        1600: { slidesPerView: 5, spaceBetween: 35 },
                     }}
                     onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                     style={{ padding: "20px 0" }}
